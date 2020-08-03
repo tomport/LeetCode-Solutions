@@ -21,12 +21,7 @@ class Solution {
                     count--;
                     temp = temp.next;
                 }
-                if(n == 1){
-                    temp.next = null;
-                }
-                else{
-                    temp.next = temp.next.next;
-                }
+                temp.next = temp.next.next;
                 return head;
             }
         }
