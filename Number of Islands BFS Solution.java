@@ -30,12 +30,11 @@ class Solution {
         
         Queue<Node> queue = new LinkedList<>();
         queue.add(new Node(i, j));
-        //maybe replace map with int[] or something
         while(!queue.isEmpty()){
             i = queue.peek().x;
             j = queue.remove().y;
             if(i < grid.length && i >= 0 && j < grid[0].length && j >= 0 && grid[i][j] == '1'){
-                grid[i][j] = 'f';
+                grid[i][j] = '0';
                 queue.add(new Node(i+1, j));
                 queue.add(new Node(i, j+1));
                 queue.add(new Node(i-1, j));
