@@ -7,7 +7,7 @@ class Solution {
         }
         else{
             boolean carry = true;
-            while(carry && i > -1){
+            while(i > -1){
                 if(digits[i] != 9){
                     digits[i] = digits[i] + 1;
                     carry = false;
